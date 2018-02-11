@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <iostream>
 #include <unistd.h>
+#include <string.h>
+#include <stdlib.h>
 
 using namespace std;
 

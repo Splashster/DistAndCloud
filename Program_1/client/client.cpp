@@ -38,30 +38,4 @@ int main(int argc, char* argv[]){
       return 0;
     }
   }
-  
-  while( 1 ){
-      string command = " ", fileName = " ";
-      char space;
-      getline(cin,command);
-      space = command[3];
-
-  	  while((strcasecmp(command.substr(0,4).c_str(), "quit") != 0 && strcasecmp(command.substr(0,3).c_str(), "put") != 0 && strcasecmp(command.substr(0,3).c_str(), "get") != 0) || (strcasecmp(command.substr(0,4).c_str(), "quit") != 0 && !isspace(space))) {
-        		cout << "Invalid command try again"<< endl;
-        		getline(cin,command);
-            space = command[3];
-    	}
-  	
-    	if(strcasecmp(command.substr(0,3).c_str(), "put") == 0){
-    		fileName = command.substr(4);
-    		put(&info,fileName);
-    	}
-  	  else if(strcasecmp(command.substr(0,3).c_str(), "get") == 0){
-  		fileName = command.substr(4);
-      get(&info,fileName);
-  	  }
-      else{
-  		      close_socket(&info);
-  		      return 0;
-          }
-    }
-}
+}  
