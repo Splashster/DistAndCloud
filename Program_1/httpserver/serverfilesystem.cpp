@@ -29,11 +29,9 @@ int readSock(int clisock){
 	char buff[MAX_BUFFER_SIZE];
 	int msgSize;
 	FILE *fp = fdopen(clisock, "r");
-	
+	fprintf(fp, "%s");	
+
 	}
-
-
-
 
 
 void* connectHandler(void* args){

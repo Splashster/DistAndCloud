@@ -1,5 +1,5 @@
 ARG1 = localhost
-ARG2 = 10001
+ARG2 = 10004
 
 all: p1 run 
 
